@@ -1,7 +1,25 @@
 aid: rangeforce
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rangeforce.png
 name: RangeForce
-description: RangeForce is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: RangeForce is a cloud-based cyber range and hands-on cybersecurity training
+  platform that helps organizations build, measure, and validate the defensive skills
+  of their security teams. Through browser-based, real-tool exercises and simulated
+  attack scenarios, RangeForce lets blue teams practice detection, incident response,
+  and threat hunting in realistic environments and benchmark individual and team readiness.
+  Founded in Estonia and backed by Techstars, the company serves enterprises, government
+  agencies, and managed security service providers. RangeForce does not currently
+  publish a public developer API, developer portal, or API reference.
 url: https://raw.githubusercontent.com/api-evangelist/rangeforce/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +29,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Cybersecurity
+- Security Training
+- Cyber Range
+- SecOps
+- Skills Development
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
 - type: Website
-  url: https://vequrity.com/
+  url: https://www.rangeforce.com/
+- type: Blog
+  url: https://www.rangeforce.com/blog
+- type: Support
+  url: https://www.rangeforce.com/rangeforce-support
+- type: SignUp
+  url: https://www.rangeforce.com/free-edition
+- type: TermsOfService
+  url: https://www.rangeforce.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.rangeforce.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/rangeforce
+- type: DomainSecurity
+  url: security/rangeforce-domain-security.yml

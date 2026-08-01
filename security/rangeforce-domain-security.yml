@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.rangeforce.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  4 14:46:41 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: rangeforce.com
+  dnssec: true
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog; cansignwildcards=0"
+  - 0 issuewild "letsencrypt.org; validationmethods=dns-01"
+  - 0 iodef "mailto:rf-infra@rangeforce.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
